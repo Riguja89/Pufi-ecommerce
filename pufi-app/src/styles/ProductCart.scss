@@ -1,0 +1,35 @@
+.productcart-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    height: 80vh;
+    .image-container{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url('https://media.gettyimages.com/id/1347534861/photo/smiling-man-with-blue-umbrella.jpg?s=612x612&w=gi&k=20&c=FDYORM_PUSCxSPAg694134gcFO_hpaT6QQRWBUlaLiA=');
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: flex;
+        align-items: center;
+        
+        .shop{
+            @include button-shop;
+            margin: 0 auto;
+        }
+    }
+    .info-container{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        // vertical-align: middle;
+        // justify-content: center;
+        h2{
+            font-weight:600;
+            font-size: xx-large
+        }
+
+        .imagen-info{
+            @include image-product;
+        }
+        .ver-mas{
+            @include button-vermas;
+        }
+    }
+}

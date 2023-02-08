@@ -2,17 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 const Home=()=>{
     return(
-        <div className='Home'>
-            <h1>
-                {/* ¡HELLO! */}
-                <br />
-                {/* GET READY? */}
-            </h1>
+        <div className='homeContainer'>
+            <h2>
+                ESTÁR CÓMODO, 
+                <br /> 
+                NUNCA FUE TAN FÁCIL
+            </h2>
+            <div>
             <Link to="/home">
-            <button className='start'>
-                Get Started
+            <button className='shop'>
+                SHOP
             </button>
             </Link>
+            </div>
         </div>
     );
 };

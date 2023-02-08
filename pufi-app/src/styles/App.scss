@@ -1,5 +1,13 @@
+@import 'Mixins.scss';
+@import 'variables.scss';
+@import 'Home.scss';
+@import 'ProductCart.scss';
+
+
+
 .App {
   text-align: center;
+  background-color: burlywood;
 }
 
 .App-logo {
