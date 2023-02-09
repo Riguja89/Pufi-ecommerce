@@ -1,0 +1,19 @@
+.instagram-container{
+    margin-top: 5%;
+    text-align: center;
+    height: 80vh;
+
+    .photo-container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+       img{
+        height: 100%;
+        width:100%;
+       }
+
+    }
+}
