@@ -5,11 +5,18 @@
 @import 'Instagram.scss';
 @import 'Newsletter.scss';
 @import 'Footer.scss';
+@import 'ProductDetail.scss';
+@import 'CompraCart.scss';
 
+html{
+  scroll-behavior: smooth;
+}
 
 .App {
   text-align: center;
   background-color: burlywood;
+  
+  
 }
 
 .App-logo {

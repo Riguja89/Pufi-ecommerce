@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import puff from "../images/puff.svg"
 import nap from "../images/nap.svg"
 import cart from "../images/cart.svg"
@@ -14,31 +15,38 @@ const Nav=()=>{
             <nav className="menu">
             <ul>
                 <li>
-                <img src={puff} className="icono" alt="" />
-                <a href="#">PUFI PUFF</a>
+                <a href="#Pufi PUFF"><img src={puff} className="icono" alt="" /><br />PUFI PUFF</a>
                 </li>
-                
                 <li>
-                <img src={rain} className="icono" alt="" />
-                <a href="#">PUFI RAIN</a>
-                
+                <a href="#Pufi RAIN"><img src={rain} className="icono" alt="" /><br />PUFI RAIN</a>
                 </li>
-                
                 <li>
-                <img src={cart} className="icono" alt="" />
-                <a href="#">PUFI CART</a>
-                
+                <a href="#Pufi CART"><img src={cart} className="icono" alt="" /><br />PUFI CART</a>
                 </li>
                 <li className="final">
-                <img src={nap} className="icono" alt="" />
-                <a href="#">PUFI NAP </a></li>
+                <a href="#Pufi NAP"><img src={nap} className="icono" alt="" /><br /> PUFI NAP </a>
+                </li>
             </ul>
             </nav>
             <div className="submenu">
                 <nav>
                 <ul className="sublist">
-                <li><a href="#">MI CUENTA ˅ </a></li>
-                <li className="final"><a href="#">MI COMPRA</a></li>
+                <li>
+                <div className="dropdown">
+                    <a className="dropbtn">MI CUENTA ▾</a>
+                    <div className="dropdown-content">
+                        <a href=" "  >MI PERFIL</a>
+                        <a href=" "  >LOG OUT</a>
+           
+                    </div>
+                </div>
+                </li>
+                <li className="final">
+                    <Link to="/miscompras">
+                        MI COMPRA
+                    </Link>
+                
+                </li>
             </ul>
                 </nav>
             </div>

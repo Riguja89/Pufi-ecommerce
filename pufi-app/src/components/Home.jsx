@@ -1,19 +1,22 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 const Home=()=>{
     return(
-        <div className='homeContainer'>
+        <div className='homeContainer' id="home">
             <h2>
                 ESTÁR CÓMODO, 
                 <br /> 
                 NUNCA FUE TAN FÁCIL
             </h2>
             <div>
-            <Link to="/home">
-            <button className='shop'>
+                <a href="#Pufi PUFF">
+                <button className='shop'>
                 SHOP
-            </button>
-            </Link>
+                </button>
+                </a>
+            
+           
+        
             </div>
         </div>
     );

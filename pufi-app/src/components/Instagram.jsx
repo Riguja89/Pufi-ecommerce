@@ -4,7 +4,8 @@ const Instagram=()=>{
     return(
         <div className='instagram-container'>
             <h3>INSTAGRAM</h3>
-            <h1>#ESPUFI</h1>
+            <a className="dropbtn" target="_blank" href='https://www.instagram.com/explore/tags/espufi/'>  <h1>#ESPUFI</h1></a>
+          
             <div className='photo-container'>
                 <img src="https://media.gettyimages.com/id/1347534861/photo/smiling-man-with-blue-umbrella.jpg?s=612x612&w=gi&k=20&c=FDYORM_PUSCxSPAg694134gcFO_hpaT6QQRWBUlaLiA=" alt="" />
                 <img src="https://http2.mlstatic.com/D_NQ_NP_126315-MLA25232304977_122016-O.webp" alt="" />
